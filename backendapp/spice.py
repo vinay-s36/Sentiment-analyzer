@@ -3,8 +3,12 @@ import pickle
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 import pandas as pd
-affin = pd.read_csv(
-    "D:\\OneDrive\\Desktop\\Sentiment-analysis\\Afinn.csv", encoding='latin-1')
+import os
+
+script_dir = os.path.dirname(__file__)
+data_file = os.path.join(script_dir, "Afinn.csv")
+model_file1 = os.path.join(script_dir, "knn_model.pkl")
+affin = pd.read_csv(data_file, encoding='latin-1')
 affinity_scores = affin.set_index('word')['value'].to_dict()
 
 nlp = spacy.load('en_core_web_sm')
@@ -22,7 +26,7 @@ def calculate_sentiment(text: str = None):
 
 
 def inputfunction(X):
-    with open("D:\\OneDrive\\Desktop\\Sentiment-analysis\\knn_model.pkl", 'rb') as model_file:
+    with open(model_file1, 'rb') as model_file:
         loaded_knn_model = pickle.load(model_file)
     y = calculate_sentiment(X)
     l = len(X.split())
