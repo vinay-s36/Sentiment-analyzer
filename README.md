@@ -8,4 +8,4 @@ To download the ML model needed for this project, follow these steps:
 
 2. Save the downloaded model file in the **backendapp** directory.
 
-#### Contributors: [Vishal](https://github.com/VykSI) [Vivek](https://github.com/VivekGuruduttK28) [Vanesh](https://github.com/Vanesh37)
+#### Contributors: [Vivek](https://github.com/VivekGuruduttK28) [Vanesh](https://github.com/Vanesh37) [Vishal](https://github.com/VykSI)
