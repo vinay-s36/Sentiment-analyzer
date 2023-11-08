@@ -28,7 +28,12 @@
           {% csrf_token %}
           <div id="imageArea" style="display: none">
             <label for="imageUpload"></label><br />
-            <input type="file" id="imageUpload" name="image" accept="image/*" />
+            <input
+              type="file"
+              id="imageUpload"
+              name="image"
+              accept="image/*"
+            /><br />
             <button id="sub2" type="submit">submit</button>
             <p>{{imageinput}}</p>
             <p>{{imageoutput}}</p>
@@ -63,15 +68,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    margin-top: 7%;
   }
 
   .content {
     background-color: #fff;
-    padding: 50px;
+    padding: 45px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
+    width: 80%;
+    max-width: 330px;
   }
 
   button {
@@ -112,6 +119,30 @@
   @media (max-width: 768px) {
     button {
       width: 100%;
+    }
+
+    .container {
+      margin-top: 15%;
+    }
+
+    .content {
+      width: 90%;
+      max-width: 300px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    button {
+      width: 100%;
+    }
+
+    .container {
+      margin-top: 20%;
+    }
+
+    .content {
+      width: 95%;
+      max-width: 250px;
     }
   }
 </style>
