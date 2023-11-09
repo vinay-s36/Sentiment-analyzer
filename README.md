@@ -19,18 +19,32 @@ git clone https://github.com/vinay-s36/Sentiment-analyzer.git
 ```
 cd Sentiment-analyzer
 ```
-3. **Installing Python Libraries:**
+3. **Create a Virtual Environment (Optional but recommended):**
 ```
-pip install scikit-learn
+python -m venv venv
 ```
+4. **Activate the Virtual Environment:**
+- On Windows:
 ```
-pip install easyocr
+venv\Scripts\activate
 ```
-4. **Downloading KNN Model:**
+- On macOS/Linux:
+```
+source venv/bin/activate
+```
+5. **Install Dependencies:**
+```
+pip install -r requirements.txt
+```
+6. **Run Migrations:**
+```
+python manage.py migrate
+```
+7. **Downloading KNN Model:**
    - Click on the following link to download the model file: [knn_model](https://www.dropbox.com/scl/fi/zp9yviz08ju6mwodkfqyx/knn_model.pkl?rlkey=et671cy106ob7kki0hkwsb708&dl=0)
-   - Save the downloaded model file in the **backendapp** directory.
+   - Save the downloaded model file (knn_model.pkl) in the **'backendapp'** directory.
      
-5. **Run the Development Server:**
+8. **Run the Development Server:**
 ```
 python manage.py runserver
 ```
