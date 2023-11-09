@@ -8,6 +8,7 @@ To download the ML model needed for this project, follow these steps:
 
 2. Save the downloaded model file in the **backendapp** directory.
 
+
 ### Installing Python Libraries
 ```
 pip install scikit-learn
@@ -15,4 +16,7 @@ pip install scikit-learn
 ```
 pip install easyocr
 ```
+
+### Running the project
+
 #### Contributors: [Vivek](https://github.com/VivekGuruduttK28) [Vanesh](https://github.com/Vanesh37) [Vishal](https://github.com/VykSI)
