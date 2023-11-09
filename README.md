@@ -36,5 +36,6 @@ python manage.py runserver
 ```
 The development server will start running at `http://127.0.0.1:8000/`
 
+### Happy coding! 🚀
 
-#### Contributors: [Vivek](https://github.com/VivekGuruduttK28) [Vanesh](https://github.com/Vanesh37) [Vishal](https://github.com/VykSI)
+### Contributors: [Vivek](https://github.com/VivekGuruduttK28) [Vanesh](https://github.com/Vanesh37) [Vishal](https://github.com/VykSI)
